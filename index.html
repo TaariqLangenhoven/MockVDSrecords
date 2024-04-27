@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Edu+TAS+Beginner:wght@700&family=Jersey+25&family=MedievalSharp&family=Monsieur+La+Doulaise&family=My+Soul&family=Roboto:wght@100&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4d74f04fa9.js" crossorigin="anonymous"></script>
+    <title>Mock Website of VDS Records</title>
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+
+            <img src="logo.jpg" class="logo" >
+
+            <ul class="page-links">
+                <li><a href="#">Releases</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+            
+            <div class="social-links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+        </nav>
+
+        <div class="content">
+            <div class="left">
+                <h1>Where <br> Music <br> Transcends</h1>
+            </div>
+            <div class="right">
+                <p>Click To Play</p>
+                <i id="icon" class="fa-solid fa-circle-play"></i>
+                <!-- <img src="images/43-439373_white-play-button-png-for-kids-video.png" id="icon"> -->
+            </div>
+        </div>
+
+        <audio id="mysong">
+            <source src="media/Song1.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+            var mysong = document.getElementById("mysong");
+            var icon = document.getElementById("icon");
+    
+            icon.onclick = function(){
+                if(mysong.paused){
+                    mysong.play();
+                    icon.classList.remove("fa-circle-play");
+                    icon.classList.add("fa-circle-pause");
+                }
+                else{
+                    mysong.pause();
+                    icon.classList.remove("fa-circle-pause");
+                    icon.classList.add("fa-circle-play");
+                }
+            }
+        </script>
+
+    </header>
+    
+</body>
+</html>
