@@ -1,2 +1,3 @@
 # MockVDSrecords
-This is an upcoming website for a Record Label website
+This is an upcoming project for a Record Label website:
+https://taariqlangenhoven.github.io/MockVDSrecords/
