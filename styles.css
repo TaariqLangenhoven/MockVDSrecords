@@ -91,27 +91,6 @@ h1{
     width: 100%;
 }
 
-/* .navbar .social-links{
-    display: flex;
-    margin-right: 6%;
-}
-
-
-.navbar .social-links a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 15px;
-    transition: 0.4s;
-}
-
-
-.navbar .social-links a:hover{
-    color: var(--primary);
-    transform: translateY(-10px);
-} */
-
 .content {
     width: 100%;
     margin-top: 180px;
@@ -182,11 +161,6 @@ h1{
     .navbar .img-tag{
         margin-left: 2%;
     }
-    
-    /* Till deciding on adding the social tags in the nav bar */
-    /* .navbar .social-links {
-        display: none;
-    } */
 
     .navbar .page-links a{
         font-size: 10px;
