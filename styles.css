@@ -32,6 +32,7 @@ h1{
 /* navigation bar , the linear gradient sents the black fade on the nav bar */
 .navbar{
     position: fixed;
+    z-index: 999;
     width: 100%;
     margin: auto;
     padding: 15px 0;
