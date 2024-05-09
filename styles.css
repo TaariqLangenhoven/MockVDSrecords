@@ -259,6 +259,7 @@ h1{
 
 .container{
     position: relative;
+    margin-bottom: 30px;
     /* border-radius: 100px; */
 }
 
@@ -326,6 +327,7 @@ h1{
 
 .preview img{
     border-radius: 10px;
+    width: 200px;
 }
 
 .arrows{
@@ -355,3 +357,73 @@ h1{
 }
 
 
+@media screen and (max-width: 500px){
+
+    .title-text h1{
+        font-size: 40px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .container .container-box{
+        width: 80%;
+        margin-bottom: 50px;
+        margin-left: 0;
+        position: relative;
+    }
+
+    .slider{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preview img{
+        border-radius: 10px;
+        width: 100px;
+    }
+
+    .container-box .layer{
+        width: 80%;
+        /* height: 60%; */
+        position: absolute;
+        bottom: 0;
+        left: 36px;
+        right: 0;
+        top: 340px;
+    }
+
+
+    .container-box .layer h1{
+        font-size: 40px;
+    }
+    
+    .container-box .layer h2{
+        font-size: 25px;
+    }
+    
+    .container-box .controls{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-box .controls .fa{
+        margin: 20px 40px;
+        color: var(--primary);
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .container-box .layer .controls #track-play{
+        font-size: 35px;
+    }
+}
