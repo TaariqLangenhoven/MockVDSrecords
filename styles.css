@@ -60,7 +60,8 @@ h1{
 }
 
 .navbar .img-tag{
-    margin-left: 6%;
+    /* might turn margin-left back to 6% */
+    margin-left: 7.5%;
 }
 
 .navbar .page-links li{
@@ -157,10 +158,6 @@ h1{
     .navbar .logo{
        
         width: 50px;
-    }
-
-    .navbar .img-tag{
-        margin-left: 2%;
     }
 
     .navbar .page-links a{
@@ -375,9 +372,10 @@ h1{
 
     .container .container-box{
         width: 80%;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         margin-left: 0;
         position: relative;
+        z-index: 0;
     }
 
     .slider{
