@@ -21,7 +21,7 @@ h1{
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-image: url(images/Vinyl.jpg);
     background-position: center;
     background-size: cover;
@@ -224,7 +224,7 @@ h1{
     width: 100%;
     background-position: center;
     background-size: cover;
-    
+    position: relative;
 }
 
 
@@ -234,8 +234,32 @@ h1{
     font-size: 60px;
 }
 
+.view-all{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 48px;
+    gap: 20px;
+}
+
+
+.view-all .view-text{
+   color: white;
+   font-size: 25px;
+}
+
+.view-all h3 a{
+    text-decoration: none;
+}
+
+.view-all i{
+    margin-left: 15px;
+}
+
 .container{
     position: relative;
+    /* border-radius: 100px; */
 }
 
 .container-box{
@@ -248,13 +272,13 @@ h1{
     margin-bottom: 50px;
     margin-left: 89px;
     position: relative;
-    /* margin-bottom: 30px; */
-    /* position: relative; */
+    border-radius: 20px;
 }
 
 .container-box .layer{
     width: 100%;
-    height: 60%;
+    /* THIS HEIGHT MIGHT NEED TO CHANGE DEPENDING ON THE LAYOUT */
+    /* height: 60%; */
     position: absolute;
     top: 200px;
     right: 380px;
@@ -298,6 +322,10 @@ h1{
     align-items: center;
     right: 10px;
     bottom: 80px;
+}
+
+.preview img{
+    border-radius: 10px;
 }
 
 .arrows{
