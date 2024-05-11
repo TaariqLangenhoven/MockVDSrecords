@@ -10,8 +10,8 @@
 }
 
 body{
-    background-image: url(assets/images/background/BlackWall.jpg);
-    background-size: cover;
+    background-image: url(assets/images/background/city.jpg);
+    background-size: initial;
     background-position: center;
 }
 
@@ -223,12 +223,13 @@ h1{
     background-position: center;
     background-size: cover;
     position: relative;
+    margin: 20px 0;
 }
 
 
 .title-text h1{
     text-align: center;
-    padding: 10px 0;
+    padding: 22px 0;
     font-size: 50px;
 }
 
@@ -239,20 +240,17 @@ h1{
     top: 100px;
     right: 48px;
     gap: 20px;
+    z-index: 3;
 }
 
-
-.view-all .view-text{
-   color: white;
-   font-size: 25px;
+.view-all .view-heading .view-link{
+ text-decoration: none;
+ color: white;
 }
 
-.view-all h3 a{
-    text-decoration: none;
-}
-
-.view-all i{
+.view-all .view-heading .view-link .view-text{
     margin-left: 15px;
+    
 }
 
 .container{
@@ -268,8 +266,8 @@ h1{
     background-position:center;
     background-size: cover;
     width: 80%;
-    height: 500px;
-    margin-bottom: 30px;
+    height: 550px;
+    /* margin-bottom: 10px; */
     margin-left: 89px;
     position: relative;
     border-radius: 20px;
@@ -427,3 +425,129 @@ h1{
         font-size: 35px;
     }
 }
+
+
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ========================== */
+/* ======== ARTIST SECTION ========= */
+
+#artists{
+    width: 100%;
+    /* background-image: url(assets/images/background/BlackWall.jpg); */
+}
+
+.artist-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-box{
+    width: 100%;
+    margin: 55px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.cards {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.cards img{
+    width: 300px;
+    height: 400px;  
+    display: block;
+}
+
+
+.card-layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.cards:hover .card-layer{
+    height: 100%;
+}
+
+
+.cards:hover {
+    scale: 1.05;
+}
+
+.card-layer a {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+    transition: 0.5s;
+}
+
+.card-layer a:hover{
+    color: var(--primary);
+}
+
+.artist-container .art-name{
+    position: absolute;
+    color: white;
+    font-size:  30px;
+    z-index: 4;
+}
+
+.artist-container .art-1{
+    bottom:-30px;
+    left: 440px;
+
+}
+
+.artist-container  .art-1 h2{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.artist-container .art-2{
+    bottom: -30px;
+    left: 690px;
+}
+
+.artist-container  .art-2 h2{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+/* .artist-container .cards:hover .art-2 h2{
+    color: white;
+} */
+
+@media screen and (max-width:500px){
+
+}
+
